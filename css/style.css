@@ -1,0 +1,159 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) {
+/* Styles */
+    .container  {
+      width: 310px;
+    }
+
+    .slider-post {
+      height: 280px;
+      width: 300px;
+    }
+
+    .hgrande {
+      width: 300px!important;
+    }
+
+    .news-slider {
+        padding-right: 10%;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .news-hgrande {
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+    }
+
+}
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1024px) {
+    .container  {
+      width: 980px;
+    }
+
+    .slider-post {
+      height: 280px;
+      width: 460px;
+    }
+
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1280px) {
+      .container  {
+        width: 1180px;
+      }
+      .slider-post {
+        height: 320px;
+        width: 575px;
+      }
+
+      .news-slider {
+          padding-right: 10%;
+          font-weight: 800;
+          font-size: 2.1rem;
+          line-height: 2.1rem;
+      }
+
+      .news-hgrande {
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+      }
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.news-slider {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    z-index: 99;
+    padding-right: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-hgrande {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.news {
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+}
+
+.news-h {
+    padding: 5px 15px 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.news-text {
+    padding: 5px 15px 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+.newscard {
+    margin-bottom: 10px;
+}
+
+.hnewscard {
+    max-height: 80px;
+}
+
+/* Gradient color1 - color2 - color1 */
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #f4f4f4;
+    background-image: linear-gradient(to right, #f4f4f4, #ccc, #f4f4f4);
+  }
+
+  /* Posicionamentos nos cantos */
+
+  .nocanto1 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 99;
+  }
+
+  .nocanto2 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 99;
+  }
+
+  .nocanto3 {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: 99;
+  }
+
+  .nocanto4 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+  }
