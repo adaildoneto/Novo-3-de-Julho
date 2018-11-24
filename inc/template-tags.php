@@ -30,7 +30,7 @@ if ( ! function_exists( 'odin_classes_page_sidebar' ) ) {
 	 * @return string Classes name.
 	 */
 	function odin_classes_page_sidebar() {
-		return 'col s12 l9';
+		return 'col s12 m12 l8';
 	}
 }
 
@@ -44,7 +44,7 @@ if ( ! function_exists( 'odin_classes_page_sidebar_aside' ) ) {
 	 * @return string Classes name.
 	 */
 	function odin_classes_page_sidebar_aside() {
-		return 'col l3 s12';
+		return 'col s12 m12 l4';
 	}
 }
 

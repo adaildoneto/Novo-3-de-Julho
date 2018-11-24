@@ -7,7 +7,7 @@
 
     .slider-post {
       height: 280px;
-      width: 300px;
+      width: 100%;
     }
 
     .hgrande {
@@ -34,12 +34,12 @@
 @media only screen
 and (min-width : 1024px) {
     .container  {
-      width: 980px;
+      width: 960px;
     }
 
     .slider-post {
       height: 280px;
-      width: 460px;
+      width: 100%;
     }
 
 }
@@ -48,11 +48,11 @@ and (min-width : 1024px) {
 @media only screen
 and (min-width : 1280px) {
       .container  {
-        width: 1180px;
+        width: 960px;
       }
       .slider-post {
         height: 320px;
-        width: 575px;
+        width: 100%;
       }
 
       .news-slider {
@@ -70,27 +70,24 @@ and (min-width : 1280px) {
 }
 
 
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 .news-slider {
     position: absolute;
     bottom: 20px;
     left: 10%;
     z-index: 99;
     padding-right: 10%;
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .news-hgrande {
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 400;
     padding: 5px;
 }
 
 .news {
     padding: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.7rem;
@@ -98,7 +95,7 @@ and (min-width : 1280px) {
 
 .news-h {
     padding: 5px 15px 10px 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 300;
     font-size: 1.1rem;
     line-height: 1.3rem;
@@ -106,7 +103,7 @@ and (min-width : 1280px) {
 
 .news-text {
     padding: 5px 15px 10px 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 200;
     font-size: 1rem;
     line-height: 1.1rem;

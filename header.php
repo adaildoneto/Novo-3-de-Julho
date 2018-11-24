@@ -25,30 +25,32 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
-	<div class="container">
-		<nav class="nav-extended" style="background: linear-gradient(180deg, #78909c 0%, #37474f 100%);" >
+<body class="grey lighten-4">
 
-			<div class="container">
+
+<div class="row">
+
+
+<div class="container white z-depth-2" style="margin-top: 15px;">
+		<nav class="nav-extended transparent z-depth-0" >
+
+
 				<div class="row">
-					<div class="col l1">
 
-								<i class="fas fa-bars"></i>
-
-					</div>
-
-						<div class="col l9">
 
 							<?php if (has_custom_logo() ): ?>
 
 							 <div class="nav-wrapper">
-									<?php odin_the_custom_logo();?>
+								 <div class="center" style="display: block;">
+								 			<?php odin_the_custom_logo();?>
+								 </div>
+
 							</div>
 							<?php else : ?>
 
 <div class="nav-wrapper center-align">
 
-	<a class="brand-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+	<a class="brand-logo grey-text" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 			<i class="far fa-newspaper"></i>	<?php bloginfo( 'name' ); ?>
 	</a></br>
 	<h6 class="center">
@@ -61,43 +63,49 @@
 
 						</div>
 
-							<div class="col l2 right-align">
-									<i class="fab fa-facebook-square"></i>
-									<i class="fab fa-twitter-square"></i>
-									<i class="fas fa-search"></i>
+<?php if ( dynamic_sidebar('topo-sidebar') ) : else : endif; ?>
 
+	<div class="row red darken-4">
 
-
-							</div>
-
-
-					<div class="col s12 l9 hide-on-med-and-down">
-							 <?php
-														 wp_nav_menu( array(
+		<div class="col s2 l9" style="padding: 0px; margin: 0px;">
+			<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				 <?php
+						 wp_nav_menu( array(
+								 'menu'              => 'main-menu',
+								 'menu_id' 			=> 'primary-menu',
 								 'theme_location'    => 'main-menu',
-								 'menu_id'           => 'primary-menu',
-								 'menu_class' 	    => 'left hide-on-med-and-down',
-								 'walker'		    =>	new Materialize_Walker_Nav_Menu(),
-							 ) );
-							 ?>
+								 'depth'             =>  2,
+								 'container'			=> 'div',
+								 'container_class' => 'nav-wrapper red darken-1',
+								 'menu_class' 		=> 'left hide-on-med-and-down',
+								 'walker'			=>	new Materialize_Walker_Nav_Menu(),
+						 ));
+				 ?>
+		 </div>
 
-					 </div>
-
-					 <div class="col s12 l3 right">
-						<div class="nav-wrapper blue-grey darken-1">
-									<form>
-										<div class="input-field">
-										 <input id="search" type="search" value="<?php echo get_search_query(); ?>" name="s"/>
-										 <label class="label-icon active" for="search"><i class="material-icons right">search</i></label>
-										 <i class="material-icons">close</i>
-										 </div>
-									 </form>
-						</div>
-					</div>
-
+		 <div class="col s10 l3 right" style="padding: 0px; margin: 0px;">
+			<div class="nav-wrapper red darken-1" >
+						<form>
+							<div class="input-field">
+							 <input id="search" type="search" value="<?php echo get_search_query(); ?>" name="s"/>
+							 <label class="label-icon active" for="search"><i class="material-icons right">search</i></label>
+							 <i class="material-icons">close</i>
+							 </div>
+						 </form>
+			</div>
+		</div>
 
 	</div>
 
-	</nav>
 
-</div>
+	</nav>
+	<?php 	 wp_nav_menu( array(
+				 'menu'              => 'main-menu',
+				 'menu_id' 			=> 'mobile-menu',
+				 'theme_location'    => 'main-menu',
+				 'depth'             =>  2,
+				 'container'			=> 'ul',
+				 'menu_class' 		=> 'sidenav',
+				 'walker'			=>	new Materialize_Walker_Nav_Menu(),
+		 ));
+		 ?>

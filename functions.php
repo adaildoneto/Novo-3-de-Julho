@@ -49,7 +49,7 @@ require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.p
 require get_template_directory() . '/core/classes/class-materialize-navwalker.php';
 
 
-  
+
 
 /**
  * Odin Widgets.
@@ -204,8 +204,107 @@ function odin_widgets_init() {
 			'description' => __( 'Site Main Sidebar', 'odin' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
-			'before_title' => '<h3 class="widgettitle widget-title">',
-			'after_title' => '</h3>',
+			'before_title' => '<h5 style="padding-bottom: 5px;">',
+			'after_title' => '</h5><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Topo', 'odin' ),
+			'id' => 'topo-sidebar',
+			'description' => __( 'Widget abaixo da logo do 3 de julho', 'odin' ),
+			'before_widget' => '<div class="row" style="padding: 0px; margin: 0px;"><div class="col s12 m12 l12">',
+			'after_widget' => '</div></div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Destaque', 'odin' ),
+			'id' => 'destaque-sidebar',
+			'description' => __( 'Destaque acima dos Videos', 'odin' ),
+			'before_widget' => '<div class="row">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Home 1', 'odin' ),
+			'id' => 'h1-sidebar',
+			'description' => __( 'Banner entre o slides e o flash', 'odin' ),
+			'before_widget' => '<div class="col s12">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Home 2', 'odin' ),
+			'id' => 'h2-sidebar',
+			'description' => __( 'Banner entre as noticias', 'odin' ),
+			'before_widget' => '<div class="col s12">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Home 3', 'odin' ),
+			'id' => 'h3-sidebar',
+			'description' => __( 'Banner entre as noticias', 'odin' ),
+			'before_widget' => '<div class="col s12">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Home 4', 'odin' ),
+			'id' => 'h4-sidebar',
+			'description' => __( 'Banner entre as noticias', 'odin' ),
+			'before_widget' => '<div class="col s12">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Home 5', 'odin' ),
+			'id' => 'h5-sidebar',
+			'description' => __( 'Banner entre as noticias', 'odin' ),
+			'before_widget' => '<div class="col s12">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Home 6', 'odin' ),
+			'id' => 'h6-sidebar',
+			'description' => __( 'Banner entre as noticias', 'odin' ),
+			'before_widget' => '<div class="col s12">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Home 7', 'odin' ),
+			'id' => 'h7-sidebar',
+			'description' => __( 'Banner entre as noticias', 'odin' ),
+			'before_widget' => '<div class="col s12">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
 }
@@ -358,19 +457,40 @@ function excerpt($limit) {
 }
 
 //img-responsive para as imagens dentro do file_get_contents
-function add_responsive_class($content){
+add_filter( 'the_content', 'wpse_add_img_post_class' );
+function wpse_add_img_post_class( $content ) {
+    // Bail if there is no content to work with.
+    if ( ! $content ) {
+        return $content;
+    }
 
-        $content = mb_convert_encoding($content, 'HTML-ENTITIES', "UTF-8");
-        $document = new DOMDocument();
-        libxml_use_internal_errors(true);
-        $document->loadHTML(utf8_decode($content));
+    // Create an instance of DOMDocument.
+    $dom = new \DOMDocument();
 
-        $imgs = $document->getElementsByTagName('img');
-        foreach ($imgs as $img) {
-           $img->setAttribute('class','responsive-img');
-        }
+    // Supress errors due to malformed HTML.
+    // See http://stackoverflow.com/a/17559716/3059883
+    $libxml_previous_state = libxml_use_internal_errors( true );
 
-        $html = $document->saveHTML();
-        return $html;
+    // Populate $dom with $content, making sure to handle UTF-8.
+    // Also, make sure that the doctype and HTML tags are not added to our
+    // HTML fragment. http://stackoverflow.com/a/22490902/3059883
+    $dom->loadHTML( mb_convert_encoding( $content, 'HTML-ENTITIES', 'UTF-8' ),
+          LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD );
+
+    // Restore previous state of libxml_use_internal_errors() now that we're done.
+    libxml_use_internal_errors( $libxml_previous_state );
+
+    // Create an instance of DOMXpath.
+    $xpath = new \DOMXpath( $dom );
+
+    // Get images then loop through and add additional classes.
+    $imgs = $xpath->query( "//img" );
+    foreach ( $imgs as $img ) {
+        $existing_class = $img->getAttribute( 'class' );
+        $img->setAttribute( 'class', "{$existing_class} responsive-img" );
+    }
+
+    // Save and return updated HTML.
+    $new_content = $dom->saveHTML();
+    return $new_content;
 }
-add_filter        ('the_content', 'add_responsive_class');

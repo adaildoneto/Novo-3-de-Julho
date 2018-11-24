@@ -14,34 +14,18 @@
  */
 
 get_header(); ?>
-<div class="container">
+
 	<div class="row">
-			<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
-	</div>
-
-</div>
-
-<div class="divider">
-
-</div>
-<div class="row grey lighten-4">
-	<div class="container">
-		<div class="row">
-			<?php include(TEMPLATEPATH.'/mod-noticias-linha.php');?>
+		<div class="col s12 m12 l8">
+				<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 		</div>
 
+		<?php get_sidebar();?>
+
 	</div>
-</div>
 
 
-<div class="divider">
 
-</div>
-<div class="container">
-	<div class="row">
 
-<?php include(TEMPLATEPATH.'/mod-noticias-capa2.php');?>
-</div>
-</div>
 <?php
 get_footer();
