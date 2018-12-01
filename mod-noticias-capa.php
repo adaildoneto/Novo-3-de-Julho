@@ -32,6 +32,8 @@
   </div>
 <div class="row">
   <?php if ( dynamic_sidebar('h1-sidebar') ) : else : endif; ?>
+
+
 </div>
 
 
@@ -72,67 +74,11 @@
 
 
   <div class="col S12 m12 l6">
-    <h5 style="padding-bottom: 5px;">Geral</h5>
-    <hr class="style-one">
-    <?php
-
-      $myargs = array (
-        'pagination'             => false,
-        'cat'							   			=> array(2,7),
-        'posts_per_page'         => 7,
-        'ignore_sticky_posts'    => true,
-
-      );
-      // The Query
-      $myquery = new WP_Query( $myargs );
-
-      // The Loop
-      while ( $myquery->have_posts() ) {
-
-          $myquery->the_post();
-
-
-
-          get_template_part( 'cardnews', 'horizontal' );
-
-
-                wp_reset_postdata();
-
-        }
-
-      ?>
+  <?php if ( dynamic_sidebar('n1-sidebar') ) : else : endif; ?>
   </div>
 
   <div class="col S12 m12 l6">
-    <h5 style="padding-bottom: 5px;">Polícia</h5>
-    <hr class="style-one">
-    <?php
-
-      $myargs = array (
-        'pagination'             => false,
-        'cat'							   			=> array(2,7),
-        'posts_per_page'         => 7,
-        'ignore_sticky_posts'    => true,
-
-      );
-      // The Query
-      $myquery = new WP_Query( $myargs );
-
-      // The Loop
-      while ( $myquery->have_posts() ) {
-
-          $myquery->the_post();
-
-
-
-          get_template_part( 'cardnews', 'horizontal' );
-
-
-                wp_reset_postdata();
-
-        }
-
-      ?>
+<?php if ( dynamic_sidebar('n2-sidebar') ) : else : endif; ?>
   </div>
 
   <div class="row">
@@ -141,67 +87,11 @@
 
 
     <div class="col S12 m12 l6">
-      <h5 style="padding-bottom: 5px;">Saúde</h5>
-      <hr class="style-one">
-      <?php
-
-        $myargs = array (
-          'pagination'             => false,
-          'cat'							   			=> array(2,7),
-          'posts_per_page'         => 3,
-          'ignore_sticky_posts'    => true,
-
-        );
-        // The Query
-        $myquery = new WP_Query( $myargs );
-
-        // The Loop
-        while ( $myquery->have_posts() ) {
-
-            $myquery->the_post();
-
-
-
-            get_template_part( 'cardnews', 'horizontal' );
-
-
-                  wp_reset_postdata();
-
-          }
-
-        ?>
+      <?php if ( dynamic_sidebar('n3-sidebar') ) : else : endif; ?>
     </div>
 
     <div class="col S12 m12 l6">
-      <h5 style="padding-bottom: 5px;">Educação</h5>
-      <hr class="style-one">
-      <?php
-
-        $myargs = array (
-          'pagination'             => false,
-          'cat'							   			=> array(2,7),
-          'posts_per_page'         => 3,
-          'ignore_sticky_posts'    => true,
-
-        );
-        // The Query
-        $myquery = new WP_Query( $myargs );
-
-        // The Loop
-        while ( $myquery->have_posts() ) {
-
-            $myquery->the_post();
-
-
-
-            get_template_part( 'cardnews', 'horizontal' );
-
-
-                  wp_reset_postdata();
-
-          }
-
-        ?>
+      <?php if ( dynamic_sidebar('n4-sidebar') ) : else : endif; ?>
     </div>
     <div class="row">
       <?php if ( dynamic_sidebar('h4-sidebar') ) : else : endif; ?>
@@ -209,67 +99,11 @@
 
 
       <div class="col S12 m12 l6">
-        <h5 style="padding-bottom: 5px;">Mundo</h5>
-        <hr class="style-one">
-        <?php
-
-          $myargs = array (
-            'pagination'             => false,
-            'cat'							   			=> array(2,7),
-            'posts_per_page'         => 3,
-            'ignore_sticky_posts'    => true,
-
-          );
-          // The Query
-          $myquery = new WP_Query( $myargs );
-
-          // The Loop
-          while ( $myquery->have_posts() ) {
-
-              $myquery->the_post();
-
-
-
-              get_template_part( 'cardnews', 'horizontal' );
-
-
-                    wp_reset_postdata();
-
-            }
-
-          ?>
+      <?php if ( dynamic_sidebar('n5-sidebar') ) : else : endif; ?>
       </div>
 
       <div class="col S12 m12 l6">
-        <h5 style="padding-bottom: 5px;">Nacional</h5>
-        <hr class="style-one">
-        <?php
-
-          $myargs = array (
-            'pagination'             => false,
-            'cat'							   			=> array(2,7),
-            'posts_per_page'         => 3,
-            'ignore_sticky_posts'    => true,
-
-          );
-          // The Query
-          $myquery = new WP_Query( $myargs );
-
-          // The Loop
-          while ( $myquery->have_posts() ) {
-
-              $myquery->the_post();
-
-
-
-              get_template_part( 'cardnews', 'horizontal' );
-
-
-                    wp_reset_postdata();
-
-            }
-
-          ?>
+    <?php if ( dynamic_sidebar('n6-sidebar') ) : else : endif; ?>
       </div>
       <div class="row">
         <?php if ( dynamic_sidebar('h6-sidebar') ) : else : endif; ?>
@@ -277,68 +111,12 @@
 
 
         <div class="col S12 m12 l6">
-          <h5 style="padding-bottom: 5px;">Cultura</h5>
-          <hr class="style-one">
-          <?php
-
-            $myargs = array (
-              'pagination'             => false,
-              'cat'							   			=> array(2,7),
-              'posts_per_page'         => 3,
-              'ignore_sticky_posts'    => true,
-
-            );
-            // The Query
-            $myquery = new WP_Query( $myargs );
-
-            // The Loop
-            while ( $myquery->have_posts() ) {
-
-                $myquery->the_post();
-
-
-
-                get_template_part( 'cardnews', 'horizontal' );
-
-
-                      wp_reset_postdata();
-
-              }
-
-            ?>
+          <?php if ( dynamic_sidebar('n7-sidebar') ) : else : endif; ?>
         </div>
 
         <div class="col S12 m12 l6">
-          <h5 style="padding-bottom: 5px;">Concurso</h5>
-          <hr class="style-one">
-          <?php
-
-            $myargs = array (
-              'pagination'             => false,
-              'cat'							   			=> array(2,7),
-              'posts_per_page'         => 3,
-              'ignore_sticky_posts'    => true,
-
-            );
-            // The Query
-            $myquery = new WP_Query( $myargs );
-
-            // The Loop
-            while ( $myquery->have_posts() ) {
-
-                $myquery->the_post();
-
-
-
-                get_template_part( 'cardnews', 'horizontal' );
-
-
-                      wp_reset_postdata();
-
-              }
-
-            ?>
-        </div>
+              <?php if ( dynamic_sidebar('n8-sidebar') ) : else : endif; ?>
+             </div>
         <div class="row">
           <?php if ( dynamic_sidebar('h7-sidebar') ) : else : endif; ?>
         </div>
