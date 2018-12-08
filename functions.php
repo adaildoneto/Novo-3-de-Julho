@@ -604,3 +604,7 @@ function wpse_add_img_post_class( $content ) {
     $new_content = $dom->saveHTML();
     return $new_content;
 }
+
+remove_action( 'init',          'rest_api_init' ) // remove this line;
+remove_action( 'rest_api_init', 'rest_api_default_filters', 10, 1 );
+remove_action( 'parse_request', 'rest_api_loaded' ) // remove this line;
