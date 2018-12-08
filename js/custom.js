@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
   slidesToScroll: 1,
   speed: 1800,
   autoplay: true,
+  infinite: true,
   autoplaySpeed: 10000,
   responsive: [
   {
@@ -48,6 +49,7 @@ jQuery(document).ready(function ($) {
   speed: 1800,
   autoplay: true,
   autoplaySpeed: 10000,
+  infinite: true,
   responsive: [
   {
   breakpoint: 1024,
@@ -90,6 +92,7 @@ jQuery(document).ready(function ($) {
   speed: 1800,
   autoplay: true,
   autoplaySpeed: 10000,
+ infinite: true,
   responsive: [
   {
   breakpoint: 1024,

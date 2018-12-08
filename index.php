@@ -36,8 +36,10 @@ get_header(); ?>
 		<div class="col s12 m12 l8">
 				<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 		</div>
+<div class="col s12 m12 l4">
+  		<?php get_sidebar();?>
+</div>
 
-		<?php get_sidebar();?>
 
 	</div>
 
