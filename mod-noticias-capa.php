@@ -129,7 +129,7 @@
 
               $myargs = array (
                 'pagination'             => false,
-                'cat'							   			=> array(2,7),
+                'cat'							   			=> array(6),
                 'posts_per_page'         => 5,
                 'ignore_sticky_posts'    => true,
 
