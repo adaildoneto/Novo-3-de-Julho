@@ -83,7 +83,8 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function($) {
-    jQuery(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
-    jQuery(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
-    jQuery(".sidenav").sidenav();
+    $(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
+    $(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
+    $(".sidenav").sidenav();
+
 });

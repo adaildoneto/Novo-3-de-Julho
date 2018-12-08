@@ -1,4 +1,4 @@
-<?php
+f<?php
 /**
  * Odin functions and definitions.
  *
@@ -182,8 +182,8 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		 *  @since Odin 2.2.10
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 240,
-			'width'       => 240,
+			'height'      => 320,
+			'width'       => 320,
 			'flex-height' => true,
 		) );
 	}
@@ -215,7 +215,7 @@ function odin_widgets_init() {
 			'description' => __( 'Widget abaixo da logo do 3 de julho', 'odin' ),
 			'before_widget' => '<div class="row" style="padding: 0px; margin: 0px;"><div class="col s12 m12 l12">',
 			'after_widget' => '</div></div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
@@ -223,10 +223,32 @@ function odin_widgets_init() {
 		array(
 			'name' => __( 'Destaque', 'odin' ),
 			'id' => 'destaque-sidebar',
-			'description' => __( 'Destaque acima dos Videos', 'odin' ),
-			'before_widget' => '<div class="row">',
+			'description' => __( 'Widget abaixo do  Menu 3 de julho', 'odin' ),
+			'before_widget' => '<div class="row" style="padding: 0px; margin: 0px;"><div class="col s12 m12 l12">',
+			'after_widget' => '</div></div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Video', 'odin' ),
+			'id' => 'video-sidebar',
+			'description' => __( 'Video em Destaque', 'odin' ),
+			'before_widget' => '<div class="">',
 			'after_widget' => '</div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="white-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Lista Videos do Canal', 'odin' ),
+			'id' => 'listavideo-sidebar',
+			'description' => __( 'Videos ao lado do video em destaque', 'odin' ),
+			'before_widget' => '<div style="z-index: 222;">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="white-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
@@ -235,9 +257,9 @@ function odin_widgets_init() {
 			'name' => __( 'Home 1', 'odin' ),
 			'id' => 'h1-sidebar',
 			'description' => __( 'Banner entre o slides e o flash', 'odin' ),
-			'before_widget' => '<div class="col s12">',
+			'before_widget' => '<div class="col s12 m12 l12">',
 			'after_widget' => '</div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
@@ -246,9 +268,9 @@ function odin_widgets_init() {
 			'name' => __( 'Home 2', 'odin' ),
 			'id' => 'h2-sidebar',
 			'description' => __( 'Banner entre as noticias', 'odin' ),
-			'before_widget' => '<div class="col s12">',
+			'before_widget' => '<div class="col s12 m12 l12">',
 			'after_widget' => '</div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
@@ -257,9 +279,9 @@ function odin_widgets_init() {
 			'name' => __( 'Home 3', 'odin' ),
 			'id' => 'h3-sidebar',
 			'description' => __( 'Banner entre as noticias', 'odin' ),
-			'before_widget' => '<div class="col s12">',
+			'before_widget' => '<div class="col s12 m12 l12">',
 			'after_widget' => '</div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
@@ -268,9 +290,9 @@ function odin_widgets_init() {
 			'name' => __( 'Home 4', 'odin' ),
 			'id' => 'h4-sidebar',
 			'description' => __( 'Banner entre as noticias', 'odin' ),
-			'before_widget' => '<div class="col s12">',
+			'before_widget' => '<div class="col s12 m12 l12">',
 			'after_widget' => '</div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
@@ -279,9 +301,9 @@ function odin_widgets_init() {
 			'name' => __( 'Home 5', 'odin' ),
 			'id' => 'h5-sidebar',
 			'description' => __( 'Banner entre as noticias', 'odin' ),
-			'before_widget' => '<div class="col s12">',
+			'before_widget' => '<div class="col s12 m12 l12">',
 			'after_widget' => '</div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
@@ -290,9 +312,9 @@ function odin_widgets_init() {
 			'name' => __( 'Home 6', 'odin' ),
 			'id' => 'h6-sidebar',
 			'description' => __( 'Banner entre as noticias', 'odin' ),
-			'before_widget' => '<div class="col s12">',
+			'before_widget' => '<div class="col s12 m12 l12">',
 			'after_widget' => '</div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
@@ -301,9 +323,97 @@ function odin_widgets_init() {
 			'name' => __( 'Home 7', 'odin' ),
 			'id' => 'h7-sidebar',
 			'description' => __( 'Banner entre as noticias', 'odin' ),
-			'before_widget' => '<div class="col s12">',
+			'before_widget' => '<div class="col s12 m12 l12">',
 			'after_widget' => '</div>',
-			'before_title' => '<h8 class="grey-text text-lighten-3" style="padding-bottom: 5px;">',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Noticiais 1', 'odin' ),
+			'id' => 'n1-sidebar',
+			'description' => __( 'Insira aqui o widget de noticias do 3 de Julho', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Noticiais 2', 'odin' ),
+			'id' => 'n2-sidebar',
+			'description' => __( 'Insira aqui o widget de noticias do 3 de Julho', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Noticiais 3', 'odin' ),
+			'id' => 'n3-sidebar',
+			'description' => __( 'Insira aqui o widget de noticias do 3 de Julho', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Noticiais 4', 'odin' ),
+			'id' => 'n4-sidebar',
+			'description' => __( 'Insira aqui o widget de noticias do 3 de Julho', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Noticiais 5', 'odin' ),
+			'id' => 'n5-sidebar',
+			'description' => __( 'Insira aqui o widget de noticias do 3 de Julho', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Noticiais 6', 'odin' ),
+			'id' => 'n6-sidebar',
+			'description' => __( 'Insira aqui o widget de noticias do 3 de Julho', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Noticiais 7', 'odin' ),
+			'id' => 'n7-sidebar',
+			'description' => __( 'Insira aqui o widget de noticias do 3 de Julho', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Noticiais 8', 'odin' ),
+			'id' => 'n8-sidebar',
+			'description' => __( 'Insira aqui o widget de noticias do 3 de Julho', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
