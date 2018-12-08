@@ -10,7 +10,7 @@
  */
 ?>
 
-
+</div>
 </div>
 </div>
 	<footer id="footer" role="contentinfo">

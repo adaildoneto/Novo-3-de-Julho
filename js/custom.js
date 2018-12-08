@@ -82,7 +82,6 @@ jQuery(document).ready(function ($) {
 
 });
 
-
 jQuery(document).ready(function($) {
     $(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
     $(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
