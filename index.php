@@ -20,15 +20,12 @@ get_header(); ?>
 </div>
 <div class="row black" style="padding: 20px;">
   <div class="col s12 m12 l8">
-
       <?php if ( dynamic_sidebar('video-sidebar') ) : else : endif; ?>
-
-
   </div>
+
   <div class="col s12 m12 l4">
     <?php if ( dynamic_sidebar('listavideo-sidebar') ) : else : endif; ?>
   </div>
-
 </div>
 
 
@@ -36,9 +33,8 @@ get_header(); ?>
 		<div class="col s12 m12 l8">
 				<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 		</div>
-<div class="col s12 m12 l4">
+
   		<?php get_sidebar();?>
-</div>
 
 
 	</div>

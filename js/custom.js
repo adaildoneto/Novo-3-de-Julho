@@ -5,7 +5,6 @@ jQuery(document).ready(function ($) {
   slidesToScroll: 1,
   speed: 1800,
   autoplay: true,
-  infinite: true,
   autoplaySpeed: 10000,
   responsive: [
   {
@@ -49,7 +48,6 @@ jQuery(document).ready(function ($) {
   speed: 1800,
   autoplay: true,
   autoplaySpeed: 10000,
-  infinite: true,
   responsive: [
   {
   breakpoint: 1024,
@@ -84,48 +82,6 @@ jQuery(document).ready(function ($) {
 
 });
 
-jQuery(document).ready(function ($) {
-  $('.banner').slick({
-  dots: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  speed: 1800,
-  autoplay: true,
-  autoplaySpeed: 10000,
- infinite: true,
-  responsive: [
-  {
-  breakpoint: 1024,
-  settings: {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true
-  }
-  },
-  {
-  breakpoint: 600,
-  settings: {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false
-  }
-  },
-  {
-  breakpoint: 480,
-  settings: {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false
-  }
-  }
-  // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-  ]
-  });
-  // FIM Slick Slider
-
-});
 
 jQuery(document).ready(function($) {
     $(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
