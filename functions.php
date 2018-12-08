@@ -205,7 +205,7 @@ function odin_widgets_init() {
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h5 style="padding-bottom: 5px;">',
-			'after_title' => '</h5><hr class="style-one">',
+			'after_title' => '</h5><hr class="style-one"><div style="padding: 10px;">',
 		)
 	);
 	register_sidebar(
