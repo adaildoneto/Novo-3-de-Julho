@@ -1,4 +1,4 @@
-<?php
+f<?php
 /**
  * Odin functions and definitions.
  *
@@ -202,8 +202,8 @@ function odin_widgets_init() {
 			'name' => __( 'Main Sidebar', 'odin' ),
 			'id' => 'main-sidebar',
 			'description' => __( 'Site Main Sidebar', 'odin' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s card z-depth-0">',
-			'after_widget' => '</div></aside>',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
 			'before_title' => '<h5 style="padding-bottom: 5px;">',
 			'after_title' => '</h5><hr class="style-one"><div style="padding: 10px;">',
 		)
