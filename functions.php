@@ -182,8 +182,8 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		 *  @since Odin 2.2.10
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 240,
-			'width'       => 240,
+			'height'      => 320,
+			'width'       => 320,
 			'flex-height' => true,
 		) );
 	}
@@ -202,10 +202,10 @@ function odin_widgets_init() {
 			'name' => __( 'Main Sidebar', 'odin' ),
 			'id' => 'main-sidebar',
 			'description' => __( 'Site Main Sidebar', 'odin' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s card z-depth-0">',
+			'after_widget' => '</div></aside>',
 			'before_title' => '<h5 style="padding-bottom: 5px;">',
-			'after_title' => '</h5><hr class="style-one">',
+			'after_title' => '</h5><hr class="style-one"><div style="padding: 10px;">',
 		)
 	);
 	register_sidebar(
@@ -223,10 +223,32 @@ function odin_widgets_init() {
 		array(
 			'name' => __( 'Destaque', 'odin' ),
 			'id' => 'destaque-sidebar',
-			'description' => __( 'Destaque acima dos Videos', 'odin' ),
-			'before_widget' => '<div class="col s12 m12 l12">',
-			'after_widget' => '</div>',
+			'description' => __( 'Widget abaixo do  Menu 3 de julho', 'odin' ),
+			'before_widget' => '<div class="row" style="padding: 0px; margin: 0px;"><div class="col s12 m12 l12">',
+			'after_widget' => '</div></div>',
 			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Video', 'odin' ),
+			'id' => 'video-sidebar',
+			'description' => __( 'Video em Destaque', 'odin' ),
+			'before_widget' => '<div class="">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="white-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Lista Videos do Canal', 'odin' ),
+			'id' => 'listavideo-sidebar',
+			'description' => __( 'Videos ao lado do video em destaque', 'odin' ),
+			'before_widget' => '<div style="z-index: 222;">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="white-text" style="padding-bottom: 5px;">',
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
