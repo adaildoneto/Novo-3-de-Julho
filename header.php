@@ -85,13 +85,7 @@
 
 		 <div class="col s10 l3 right" style="padding: 0px; margin: 0px;">
 			<div class="nav-wrapper red darken-1" >
-						<form>
-							<div class="input-field">
-							 <input id="search" type="search" value="<?php echo get_search_query(); ?>" name="s"/>
-							 <label class="label-icon active" for="search"><i class="material-icons right">search</i></label>
-							 <i class="material-icons">close</i>
-							 </div>
-						 </form>
+	
 			</div>
 		</div>
 
