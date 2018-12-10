@@ -36,8 +36,9 @@ get_header(); ?>
 						endwhile;
 
 						// Page navigation.
-						odin_paging_nav();
-
+						echo ('<div class="col s12 m12 l12 align-center"> <div class="center">');
+						wp_pagination();
+						echo ('</div></div>');
 
 				endif;
 			?>
