@@ -87,4 +87,8 @@ jQuery(document).ready(function($) {
     $(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
     $(".sidenav").sidenav();
     $('iframe[src*="youtube"]').parent().fitVids();
+    $('.wp_pagination').find('ul').addClass('pagination');
+    $('.pagination').find('li').addClass('waves-effect');
+    $('.current').addClass('btn-flat red darken-4 white-text');
+
 });
