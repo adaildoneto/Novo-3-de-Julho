@@ -86,5 +86,5 @@ jQuery(document).ready(function($) {
     $(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
     $(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
     $(".sidenav").sidenav();
-
+    $('iframe[src*="youtube"]').parent().fitVids();
 });
