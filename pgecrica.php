@@ -4,7 +4,7 @@ Template Name: Crica
 */
 ?>
 <?php get_header(); ?>
-    <div class="pgcolunas"><img class="responsive" src="https://3dejulhonoticias.com.br/wp-content/themes/3dejulho/library/images/crica-logo.jpg" width="967px" alt="Blog do Crica"></div>
+    <div class="pgcolunas"><img class="responsive-img" src="https://3dejulhonoticias.com.br/wp-content/themes/3dejulho/library/images/crica-logo.jpg" width="967px" alt="Blog do Crica"></div>
 
 
     <div id="content" class="row">
@@ -29,7 +29,7 @@ Template Name: Crica
         </div>
         <h8 style="margin-bottom:10px; border-bottom: dashed 1px #CCCCCC; ">VEJA OUTRAS PUBLICAÇÕES DESTA COLUNA</h8>
 
-        <?php query_posts('offset=1&cat=28&showposts=10'); ?>
+        <?php query_posts('offset=1&cat=28&showposts=5'); ?>
                              <?php if (have_posts()): while (have_posts()) : the_post();?>
 
                                 <?php get_template_part( 'cardnews', '' ); ?>
@@ -37,7 +37,7 @@ Template Name: Crica
         		       <?php endif;?>
 
     </div>
-    <?php get_sidebar() ?>           
+    <?php get_sidebar() ?>
     </div> <!-- end #content -->
 
 <?php get_footer(); ?>
