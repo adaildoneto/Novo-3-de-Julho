@@ -4,19 +4,19 @@ Template Name: Astério
 */
 ?>
 <?php get_header(); ?>
-    <div class="pgcolunas"><img src="http://3dejulhonoticias.com.br/wp-content/themes/3dejulho/library/images/asterio-logo.jpg" alt="Coluna do Asterio"></div>
-    
+    <div class="pgcolunas"><img class="responsive-img" src="http://3dejulhonoticias.com.br/wp-content/themes/3dejulho/library/images/asterio-logo.jpg" alt="Coluna do Asterio"></div>
+
 <?php query_posts('cat=29&posts_per_page=1'); ?>
-	
+
     <div id="content" class="clearfix">
-        
+
     <div id="content" class="clearfix">
-        
+
         <div id="main" class="col620 clearfix" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'contentoff', 'single' ); ?>
+				<?php get_template_part( 'content', '' ); ?>
 
 				<?php attorney_content_nav( 'nav-below' ); ?>
 
@@ -43,16 +43,16 @@ Template Name: Astério
 
 		<?php endif; // end sidebar widget area ?>
         </div>
-        
-        
-        
+
+
+
             <div id="sidebar" class="widget-area col300" role="complementary">
 
-<h4 style="margin-bottom:10px; border-bottom: dashed 1px #CCCCCC; ">VEJA OUTRAS PUBLICAÇÕES DESTA COLUNA</h4>    
-    
-<?php query_posts('offset=2&cat=29&showposts=10'); ?>       
+<h4 style="margin-bottom:10px; border-bottom: dashed 1px #CCCCCC; ">VEJA OUTRAS PUBLICAÇÕES DESTA COLUNA</h4>
+
+<?php query_posts('offset=2&cat=29&showposts=10'); ?>
                      <?php if (have_posts()): while (have_posts()) : the_post();?>
-               
+
 <div class="coluna-wdg">
 
 
@@ -70,10 +70,10 @@ Template Name: Astério
 		       <?php endif;?>
 
 			</div>
-        
-        
-        
+
+
+
 
     </div> <!-- end #content -->
-        
+
 <?php get_footer(); ?>
