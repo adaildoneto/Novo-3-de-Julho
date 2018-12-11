@@ -29,7 +29,7 @@ Template Name: Crica
         </div>
         <h8 style="margin-bottom:10px; border-bottom: dashed 1px #CCCCCC; ">VEJA OUTRAS PUBLICAÇÕES DESTA COLUNA</h8>
 
-        <?php query_posts('offset=1&cat=28&showposts=5'); ?>
+        <?php query_posts('offset=1&cat=28&showposts=15'); ?>
                              <?php if (have_posts()): while (have_posts()) : the_post();?>
 
                                 <?php get_template_part( 'cardnews', '' ); ?>
