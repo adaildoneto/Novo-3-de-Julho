@@ -4,7 +4,7 @@
         <div class="nocanto2">
           <?php $categories = get_the_category();
               if ( ! empty( $categories ) ) {
-                  echo '<span class="new badge blue-grey darken-5" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
+                  echo '<span class="new badge red darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
                   }?>
 
         </div>

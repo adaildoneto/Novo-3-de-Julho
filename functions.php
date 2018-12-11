@@ -210,6 +210,17 @@ function odin_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'name' => __( 'Go Fibra', 'odin' ),
+			'id' => 'gofibra-sidebar',
+			'description' => __( 'Slider da Gofibra', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '',
+			'after_title' => '',
+		)
+	);
+	register_sidebar(
+		array(
 			'name' => __( 'Topo', 'odin' ),
 			'id' => 'topo-sidebar',
 			'description' => __( 'Widget abaixo da logo do 3 de julho', 'odin' ),

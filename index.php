@@ -33,7 +33,11 @@ get_header(); ?>
 		<div class="col s12 m12 l8">
 				<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 		</div>
-
+    <div class="col s12 m12 l4">
+      <div class="gofibra">
+        <?php if ( dynamic_sidebar('gofibra-sidebar') ) : else : endif; ?>
+      </div>
+    </div>
   		<?php get_sidebar();?>
 
 
