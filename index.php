@@ -41,6 +41,11 @@ get_header(); ?>
     </div>
   		<?php get_sidebar();?>
 	</div>
+
+  <div class="row">
+    <?php if ( dynamic_sidebar('h7-sidebar') ) : else : endif; ?>
+  </div>
+
   <div id="colunas" class="row orange lighten-5" style="margin-top: -20px;">
     <div class="col s12 m12 l12">
       <h5 class="red-text text-darken-4" style="padding-bottom: 5px; font-weight: 700;">Colunas</h5>
