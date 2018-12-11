@@ -117,6 +117,4 @@
         <div class="col S12 m12 l6">
               <?php if ( dynamic_sidebar('n8-sidebar') ) : else : endif; ?>
              </div>
-        <div class="row">
-          <?php if ( dynamic_sidebar('h7-sidebar') ) : else : endif; ?>
-        </div>
+        
