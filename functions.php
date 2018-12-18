@@ -428,6 +428,39 @@ function odin_widgets_init() {
 			'after_title' => '</h8><hr class="style-one">',
 		)
 	);
+	register_sidebar(
+		array(
+			'name' => __( 'Footer 1', 'odin' ),
+			'id' => 'footer-sidebar',
+			'description' => __( 'footer', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Footer 2', 'odin' ),
+			'id' => 'footer2-sidebar',
+			'description' => __( 'footer', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Footer 3', 'odin' ),
+			'id' => 'footer3-sidebar',
+			'description' => __( 'footer', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
 }
 
 add_action( 'widgets_init', 'odin_widgets_init' );

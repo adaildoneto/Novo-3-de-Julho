@@ -97,9 +97,12 @@ get_header(); ?>
 
   </div>
 <div class="row">
-  <div class="col S12 m12 l6">
+  <div class="col s12 m12 l12">
     <h5 style="padding-bottom: 5px;">Tudo sobre Política</h5>
     <hr class="style-one">
+    </div>
+  <div class="col S12 m12 l6">
+
     <?php
 
       $myargs = array (
