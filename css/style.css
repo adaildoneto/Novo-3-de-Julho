@@ -154,3 +154,15 @@ hr.style-one {
     right: 5px;
     z-index: 99;
   }
+
+.colunista {
+    overflow: hidden;
+    position: relative;
+    height: auto;
+}
+
+#caluna img{
+  width: 120px;
+  height: 120px;
+  text-align: center;
+}
