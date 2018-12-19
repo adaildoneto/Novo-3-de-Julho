@@ -73,9 +73,9 @@ and (min-width : 1280px) {
 .news-slider {
     position: absolute;
     bottom: 20px;
-    left: 10%;
+    left: 3%;
     z-index: 99;
-    padding-right: 10%;
+    padding-right: 3%;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
