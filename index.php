@@ -59,7 +59,7 @@ get_header(); ?>
     <div id="caluna" class="colunas">
 
 
-      <div class="colunista col s12 m6 l3">
+      <div class="colunista col s12 m6 l3 center">
       <img class="circle responsive-img z-depth-1" src="https://3dejulhonoticias.com.br/wp-content/uploads/2018/12/47591999_1013389978845318_4001141784347410432_n-e1544499406711.gif">
 
       <div class=""><a href="https://3dejulhonoticias.com.br/blog-do-crica/"><h4 class="red-text text-darken-4 center" style="font-size: 1.2rem; font-weight: 800; padding: 5px;">Coluna do Crica</h4></a>
@@ -67,7 +67,7 @@ get_header(); ?>
 
       </div>
 
-      <div class="colunista col s12 m6 l3">
+      <div class="colunista col s12 m6 l3 center">
       <img class="circle responsive-img z-depth-1" src="https://3dejulhonoticias.com.br/wp-content/uploads/2015/01/asterio-e1544500027182.png">
 
       <div class=""><a href="https://3dejulhonoticias.com.br/coluna-do-asterio-moreira/"><h4 class="red-text text-darken-4 center" style="font-size: 1.2rem; font-weight: 800; padding: 5px;">Coluna do Astério Moreira</h4></a>
@@ -75,7 +75,7 @@ get_header(); ?>
 
       </div>
 
-      <div class="colunista col s12 m6 l3">
+      <div class="colunista col s12 m6 l3 center">
       <img class="circle responsive-img z-depth-1" src="https://3dejulhonoticias.com.br/wp-content/uploads/2015/02/JACKS-e1544500270218.png">
 
       <div class=""><a href="https://3dejulhonoticias.com.br/jacks-aroldo/"><h4 class="red-text text-darken-4 center" style="font-size: 1.2rem; font-weight: 800; padding: 5px;">Coluna do Jacks Aroldo</h4></a>
@@ -83,7 +83,7 @@ get_header(); ?>
 
       </div>
 
-      <div class="colunista col s12 m6 l3">
+      <div class="colunista col s12 m6 l3 center">
       <img class="circle responsive-img z-depth-1" src="https://3dejulhonoticias.com.br/wp-content/uploads/2018/12/48275316_1621205861312922_7401799174519259136_n-e1544500804882.jpg">
 
       <div class=""><a href="https://3dejulhonoticias.com.br/politica-sem-fronteira/"><h4 class="red-text text-darken-4 center" style="font-size: 1.2rem; font-weight: 800; padding: 5px;">Coluna do Amaral</h4></a>
@@ -91,7 +91,7 @@ get_header(); ?>
 
       </div>
 
-      <div class="colunista col s12 m6 l3">
+      <div class="colunista col s12 m6 l3 center">
       <img class="circle responsive-img z-depth-1" src="https://3dejulhonoticias.com.br/wp-content/uploads/2018/12/bobomzao-e1545201202458-300x300.jpg">
 
       <div class=""><a href="https://3dejulhonoticias.com.br/pe-de-orelha/"><h4 class="red-text text-darken-4 center" style="font-size: 1.2rem; font-weight: 800; padding: 5px;">Coluna Pé de Orelha</h4></a>
