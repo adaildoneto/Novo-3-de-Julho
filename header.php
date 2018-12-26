@@ -63,8 +63,6 @@
 
 						</div>
 
-<?php if ( dynamic_sidebar('topo-sidebar') ) : else : endif; ?>
-
 	<div class="row red darken-4">
 
 		<div class="col s2 l9" style="padding: 0px; margin: 0px;">
@@ -85,7 +83,7 @@
 
 		 <div class="col s10 l3 right" style="padding: 0px; margin: 0px;">
 			<div class="nav-wrapper red darken-1" >
-	
+
 			</div>
 		</div>
 
@@ -93,6 +91,8 @@
 
 
 	</nav>
+
+	<?php if ( dynamic_sidebar('topo-sidebar') ) : else : endif; ?>
 	<?php 	 wp_nav_menu( array(
 				 'menu'              => 'main-menu',
 				 'menu_id' 			=> 'mobile-menu',
