@@ -81,6 +81,14 @@ get_header(); ?>
 
     </div>
 
+    <div class="colunista col s12 m6 l3 center">
+    <img class="circle responsive-img z-depth-1" src="https://3dejulhonoticias.com.br/wp-content/uploads/2018/12/49878793_384781228924425_2711684463401631744_n-e1546226445311-300x300.gif">
+
+    <div class=""><a href="https://3dejulhonoticias.com.br/folha-de-urtiga/"><h4 class="red-text text-darken-4 center" style="font-size: 1.2rem; font-weight: 800; padding: 5px;">Coluna Folha de Urtiga</h4></a>
+    </div>
+
+    </div>
+
   </div>
 
 </div>
