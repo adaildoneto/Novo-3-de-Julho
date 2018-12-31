@@ -222,6 +222,17 @@ function odin_widgets_init() {
 	register_sidebar(
 		array(
 			'name' => __( 'Topo', 'odin' ),
+			'id' => 'imgtopo-sidebar',
+			'description' => __( 'Imagem de topo das colunas', 'odin' ),
+			'before_widget' => '<div class="col s12" style="padding: 0px; margin: 0px;">',
+			'after_widget' => '</div>',
+			'before_title' => '<h8 class="blue-grey-text" style="padding-bottom: 5px;">',
+			'after_title' => '</h8><hr class="style-one">',
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => __( 'Topo', 'odin' ),
 			'id' => 'topo-sidebar',
 			'description' => __( 'Widget abaixo da logo do 3 de julho', 'odin' ),
 			'before_widget' => '<div class="row" style="padding: 0px; margin: 0px;">',

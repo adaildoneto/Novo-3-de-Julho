@@ -4,8 +4,9 @@ Template Name: Crica
 */
 ?>
 <?php get_header(); ?>
-    <div class="pgcolunas"><img class="responsive-img" src="https://3dejulhonoticias.com.br/wp-content/themes/3dejulho/library/images/crica-logo.jpg" width="967px" alt="Blog do Crica"></div>
-
+<div class="row">
+  <?php if ( dynamic_sidebar('imgtopo-sidebar') ) : else : endif; ?>
+</div>
 
     <div id="content" class="row">
 

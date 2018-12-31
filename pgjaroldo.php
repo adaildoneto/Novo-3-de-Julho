@@ -4,9 +4,9 @@ Template Name: Jacks Aroldo
 */
 ?>
 <?php get_header(); ?>
-    <div class="pgcolunas"><img class="responsive-img" src="http://www.3dejulhonoticias.com.br/wp-content/themes/3dejulho/library/images/jaroldo-coluna.jpg" width="967px" alt="Coluna do Jacks Aroldo"></div>
-
-
+<div class="row">
+  <?php if ( dynamic_sidebar('imgtopo-sidebar') ) : else : endif; ?>
+</div>
 
             <div id="content" class="row">
 

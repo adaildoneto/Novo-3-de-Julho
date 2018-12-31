@@ -4,9 +4,9 @@ Template Name: Pé de Orelha
 */
 ?>
 <?php get_header(); ?>
-    <div class="pgcolunas"><img class="responsive-img" src="https://3dejulhonoticias.com.br/wp-content/uploads/2018/12/banner-pedeorelha.png" width="967px" alt="Blog do Crica"></div>
-
-
+<div class="row">
+  <?php if ( dynamic_sidebar('imgtopo-sidebar') ) : else : endif; ?>
+</div>
     <div id="content" class="row">
 
       <div class="col s12 m12 l8">

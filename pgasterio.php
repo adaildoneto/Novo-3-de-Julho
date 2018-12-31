@@ -4,7 +4,9 @@ Template Name: Astério
 */
 ?>
 <?php get_header(); ?>
-    <div class="pgcolunas"><img class="responsive-img" src="http://3dejulhonoticias.com.br/wp-content/themes/3dejulho/library/images/asterio-logo.jpg" alt="Coluna do Asterio"></div>
+<div class="row">
+  <?php if ( dynamic_sidebar('imgtopo-sidebar') ) : else : endif; ?>
+</div>
     <div id="content" class="row">
 
     <div class="col s12 m12 l8">
