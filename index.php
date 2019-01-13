@@ -57,13 +57,13 @@ get_header(); ?>
 
     </div>
 
-    <div class="colunista col s12 m6 l3 center">
+    <!-- <div class="colunista col s12 m6 l3 center">
     <img class="circle responsive-img z-depth-1" src="https://3dejulhonoticias.com.br/wp-content/uploads/2015/02/JACKS-e1544500270218.png">
 
     <div class=""><a href="https://3dejulhonoticias.com.br/jacks-aroldo/"><h4 class="red-text text-darken-4 center" style="font-size: 1.2rem; font-weight: 800; padding: 5px;">Coluna do Jacks Aroldo</h4></a>
     </div>
 
-    </div>
+  </div> -->
 
     <div class="colunista col s12 m6 l3 center">
     <img class="circle responsive-img z-depth-1" src="https://3dejulhonoticias.com.br/wp-content/uploads/2018/12/48275316_1621205861312922_7401799174519259136_n-e1544500804882.jpg">
