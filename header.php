@@ -10,6 +10,7 @@
 ?><!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
+ <meta http-equiv="refresh" content="80">
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
