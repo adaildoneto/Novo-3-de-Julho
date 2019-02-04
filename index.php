@@ -89,6 +89,14 @@ get_header(); ?>
 
     </div>
 
+    <div class="colunista col s12 m6 l3 center">
+    <img class="responsive-img" src="https://3dejulhonoticias.com.br/wp-content/uploads/2019/02/51218142_2380586622224616_1900377119851020288_n-300x300.png">
+
+    <div class=""><a href="https://3dejulhonoticias.com.br/coluna-do-zen/"><h4 class="red-text text-darken-4 center" style="font-size: 1.2rem; font-weight: 800; padding: 5px;">Coluna do Zen</h4></a>
+    </div>
+
+    </div>
+
   </div>
 
 </div>
