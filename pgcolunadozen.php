@@ -26,7 +26,7 @@ Template Name: coluna do zen
 
 		<div id="sidebar" class="col s12 m12 l4" role="complementary">
         <div><h8>O Colunista.</h8>
-        		<p>Bacharel e mestre em Direito, foi Secretário de Estado de Cultura e Secretário Estadual de Educação e Esporte. É deputado estadual, no Acre, pelo PT, Líder do Governo na ALEAC e presidente licenciado do Diretório Regional do PT/AC.</p><br /><hr><br />
+        		<p>Bacharel e mestre em Direito, foi Secretário de Estado de Cultura e Secretário Estadual de Educação e Esporte. É deputado estadual, no Acre, pelo PT.</p><br /><hr><br />
         </div>
         <h8 style="margin-bottom:10px; border-bottom: dashed 1px #CCCCCC; ">VEJA OUTRAS PUBLICAÇÕES DESTA COLUNA</h8>
 
