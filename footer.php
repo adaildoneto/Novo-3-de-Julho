@@ -14,6 +14,9 @@
 </div>
 
 <footer class="page-footer red darken-4 z-depth-2" style="margin-top: -20px;">
+<div class="row">
+		<div class="container">
+
 
 
             <div class="col l4 m12 s12">
@@ -25,13 +28,13 @@
               	<?php if ( dynamic_sidebar('footer2-sidebar') ) : else : endif; ?>
             </div>
             <div class="col l3 m12 s12">
-                <?php dynamic_sidebar( 'rodape3' ); ?>
+                	<?php if ( dynamic_sidebar('footer3-sidebar') ) : else : endif; ?>
             </div>
         </div>
     </div>
     <div class="footer-copyright center-align">
         <div class="container">
-            Design por <a class="flat waves-effect waves-light btn-small" href="http://twitter.com/adaildoneto" target="_blank">@adaildoneto <i class="material-icons right">send</i></a>com muito <i class="fa fa-heart" aria-hidden="true"></i> no Acre
+            Design por <a class="white-text" href="http://twitter.com/adaildoneto" target="_blank">@adaildoneto <i class="material-icons right">send</i></a> feito com muito <i class="fa fa-heart" aria-hidden="true"></i> no Acre
         </div>
     </div>
 </footer>
