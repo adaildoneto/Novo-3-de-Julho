@@ -1,35 +1,5 @@
 
-  <div class="row">
-    <div class="sl1der">
-                <?php
 
-                  $myargs = array (
-                    'pagination'             => false,
-                    'cat'							   			=> array(17),
-                    'posts_per_page'         => 4,
-                    'ignore_sticky_posts'    => true,
-
-                  );
-                  // The Query
-                  $myquery = new WP_Query( $myargs );
-
-                  // The Loop
-                  while ( $myquery->have_posts() ) {
-
-                      $myquery->the_post();
-
-
-                      echo ('<div class="col s12">');
-                      get_template_part( 'slider', '' );
-                      echo ('</div>');
-
-                            wp_reset_postdata();
-
-                    }
-
-                  ?>
-    </div>
-  </div>
 <div class="row">
   <?php if ( dynamic_sidebar('h1-sidebar') ) : else : endif; ?>
 
@@ -37,37 +7,6 @@
 </div>
 
 
-  <div class="row">
-    <div class="flash">
-                <?php
-
-                  $myargs = array (
-                    'pagination'             => false,
-                    'cat'							   			=> array(3),
-                    'posts_per_page'         => 4,
-                    'ignore_sticky_posts'    => true,
-
-                  );
-                  // The Query
-                  $myquery = new WP_Query( $myargs );
-
-                  // The Loop
-                  while ( $myquery->have_posts() ) {
-
-                      $myquery->the_post();
-
-
-                      echo ('<div class="col s12">');
-                      get_template_part( 'slider', '' );
-                      echo ('</div>');
-
-                            wp_reset_postdata();
-
-                    }
-
-                  ?>
-    </div>
-</div>
 <div class="row">
   <?php if ( dynamic_sidebar('h2-sidebar') ) : else : endif; ?>
 </div>
@@ -117,4 +56,3 @@
         <div class="col S12 m12 l6">
               <?php if ( dynamic_sidebar('n8-sidebar') ) : else : endif; ?>
              </div>
-        

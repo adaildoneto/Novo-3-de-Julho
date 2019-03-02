@@ -117,13 +117,7 @@ get_header(); ?>
     <?php if ( dynamic_sidebar('h7-sidebar') ) : else : endif; ?>
   </div>
 
-  <div class="row">
-    <div class="col s12 m12 l12">
-      <h5 style="padding-bottom: 5px;">Posts mais acessados</h5>
-      <hr class="style-one">
-      </div>
-          <?php include(TEMPLATEPATH.'/postsmaisacessados.php');?>
-    </div>
+
 <div class="row">
   <div class="col s12 m12 l12">
     <h5 style="padding-bottom: 5px;">Tudo sobre Política</h5>
