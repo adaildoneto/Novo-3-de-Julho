@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Odin functions and definitions.
