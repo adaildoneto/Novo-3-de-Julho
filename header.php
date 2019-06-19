@@ -24,6 +24,13 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
 	<?php endif; ?>
 	<?php wp_head(); ?>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1705380769951157",
+          enable_page_level_ads: true
+     });
+</script>
 </head>
 
 <body class="grey lighten-4">

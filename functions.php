@@ -221,6 +221,17 @@ function odin_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'name' => __( 'Banner Prefeitura', 'odin' ),
+			'id' => 'banner_prefeitura',
+			'description' => __( 'Banner abaixo dos videos', 'odin' ),
+			'before_widget' => '<div>',
+			'after_widget' => '</div>',
+			'before_title' => '',
+			'after_title' => '',
+		)
+	);
+	register_sidebar(
+		array(
 			'name' => __( 'Topo', 'odin' ),
 			'id' => 'imgtopo-sidebar',
 			'description' => __( 'Imagem de topo das colunas', 'odin' ),
