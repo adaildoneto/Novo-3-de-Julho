@@ -43,7 +43,7 @@ get_header('nova'); ?>
     <h5 style="padding-bottom: 5px;">Tudo sobre Política</h5>
     <hr class="style-one">
     </div>
-  <div class="col S12 m12 l6">
+  <div class="col S12 m12 l4">
 
     <?php
 
@@ -73,7 +73,7 @@ get_header('nova'); ?>
 
       ?>
   </div>
-  <div class="col S12 m12 l6">
+  <div class="col S12 m12 l4">
     <?php
 
       $myargs = array (
@@ -103,6 +103,11 @@ get_header('nova'); ?>
 
       ?>
   </div>
+
+	<div class="col s12 m12 l4">
+		  <?php if ( dynamic_sidebar('gofibra-sidebar') ) : else : endif; ?>
+		<?php get_sidebar()?>
+	</div>
 
 </div>
 
