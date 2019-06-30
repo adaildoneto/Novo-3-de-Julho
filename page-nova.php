@@ -64,7 +64,7 @@ get_header('nova'); ?>
 
 
 
-          get_template_part( 'cardnews', 'hgrande' );
+          get_template_part( 'cardnews', '' );
 
 
                 wp_reset_postdata();
@@ -94,7 +94,7 @@ get_header('nova'); ?>
 
 
 
-          get_template_part( 'cardnews', 'hgrande' );
+          get_template_part( 'cardnews', '' );
 
 
                 wp_reset_postdata();
