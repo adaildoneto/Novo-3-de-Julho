@@ -11,7 +11,7 @@
  * @since 2.2.0
  */
 
-get_header(nova); ?>
+get_header('nova'); ?>
 
 
 <div class="row">
