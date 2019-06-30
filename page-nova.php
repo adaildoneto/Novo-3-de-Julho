@@ -106,9 +106,8 @@ get_header('nova'); ?>
 
 	<div class="col s12 m12 l4">
 		  <?php if ( dynamic_sidebar('gofibra-sidebar') ) : else : endif; ?>
-		<?php get_sidebar()?>
 	</div>
-
+		<?php get_sidebar()?>
 </div>
 
 
