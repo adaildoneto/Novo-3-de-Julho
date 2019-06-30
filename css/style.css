@@ -5,6 +5,10 @@
       width: 310px;
     }
 
+    .container_nova  {
+      width: 90%;
+    }
+
     .slider-post {
       height: 280px;
       width: 100%;
@@ -37,6 +41,10 @@ and (min-width : 1024px) {
       width: 970px;
     }
 
+    .container_nova  {
+      width: 90%;
+    }
+
     .slider-post {
       height: 280px;
       width: 100%;
@@ -49,6 +57,9 @@ and (min-width : 1024px) {
 and (min-width : 1280px) {
       .container  {
         width: 970px;
+      }
+      .container_nova  {
+        width: 90%;
       }
       .slider-post {
         height: 320px;
