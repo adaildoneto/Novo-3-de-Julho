@@ -13,9 +13,6 @@
         </div>
 </div>
 
-<div class="row">
-  <?php if ( dynamic_sidebar('h6-sidebar') ) : else : endif; ?>
-</div>
 
   <div class="col S12 m6 l3">
   <?php if ( dynamic_sidebar('n1-sidebar') ) : else : endif; ?>
@@ -26,6 +23,16 @@
   </div>
 
   </div>
+  <div class="row black" style="padding: 20px;">
+    <div class="col s12 m12 l8">
+        <?php if ( dynamic_sidebar('video-sidebar') ) : else : endif; ?>
+    </div>
+
+    <div class="col s12 m12 l4">
+      <?php if ( dynamic_sidebar('listavideo-sidebar') ) : else : endif; ?>
+    </div>
+  </div>
+
 
   <div class="row">
     <?php if ( dynamic_sidebar('h4-sidebar') ) : else : endif; ?>
