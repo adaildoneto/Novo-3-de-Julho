@@ -21,7 +21,7 @@ get_header(); ?>
 
 	<div class="row">
 		<div class="col s12 m12 l8">
-				<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
+				<?php include(TEMPLATEPATH.'/mod-noticias-nova.php');?>
 		</div>
     <div class="col s12 m12 l4">
       <div class="gofibra">
