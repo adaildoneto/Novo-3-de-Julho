@@ -254,6 +254,10 @@
   </div>
 
 
+    <div class="row">
+      <?php if ( dynamic_sidebar('h5-sidebar') ) : else : endif; ?>
+    </div>
+
     <div class="col S12 m6 l3">
       <?php if ( dynamic_sidebar('n3-sidebar') ) : else : endif; ?>
     </div>
@@ -262,8 +266,6 @@
       <?php if ( dynamic_sidebar('n4-sidebar') ) : else : endif; ?>
     </div>
 
-
-
       <div class="col S12 m6 l3">
       <?php if ( dynamic_sidebar('n5-sidebar') ) : else : endif; ?>
       </div>
@@ -271,6 +273,7 @@
       <div class="col S12 m6 l3">
     <?php if ( dynamic_sidebar('n6-sidebar') ) : else : endif; ?>
       </div>
+
       <div class="row">
         <?php if ( dynamic_sidebar('h6-sidebar') ) : else : endif; ?>
       </div>
