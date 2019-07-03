@@ -106,6 +106,11 @@
     ?>
 
 </div>
+<div class="row" style="margin-top: -20px;">
+  <div class="col s12 m12 l12">
+    <?php if ( dynamic_sidebar('banner_prefeitura') ) : else : endif; ?>
+  </div>
+</div>
   <div class="row black" style="padding: 20px;">
     <div class="col s12 m12 l8">
         <?php if ( dynamic_sidebar('video-sidebar') ) : else : endif; ?>
