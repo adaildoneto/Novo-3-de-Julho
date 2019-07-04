@@ -1,7 +1,7 @@
 
 
 <div class="row">
-  <div class="col S12 m6 l3">
+  <div class="col S12 m12 l3">
 
         <?php
 
@@ -43,7 +43,7 @@
           <?php if ( dynamic_sidebar('h3-sidebar') ) : else : endif; ?>
         </div>
 </div>
-  <div class="col S12 m6 l3">
+  <div class="col S12 m12 l3">
 
         <?php
 
@@ -95,7 +95,7 @@
         $myquery->the_post();
 
 
-        echo ('<div class="col s12 m6 l3">');
+        echo ('<div class="col s12 m12 l3">');
         get_template_part( 'cardnews', '' );
         echo ('</div>');
 
@@ -147,7 +147,7 @@
           $myquery->the_post();
 
 
-          echo ('<div class="col s12 m6 l3">');
+          echo ('<div class="col s12 m12 l3">');
           get_template_part( 'cardnews', '' );
           echo ('</div>');
 
@@ -178,7 +178,7 @@
           $myquery->the_post();
 
 
-          echo ('<div class="col s12 m6 l3">');
+          echo ('<div class="col s12 m12 l3">');
           get_template_part( 'cardnews', '' );
           echo ('</div>');
 
@@ -210,7 +210,7 @@
           $myquery->the_post();
 
 
-          echo ('<div class="col s12 m6 l3">');
+          echo ('<div class="col s12 m12 l3">');
           get_template_part( 'cardnews', '' );
           echo ('</div>');
 
@@ -241,7 +241,7 @@
           $myquery->the_post();
 
 
-          echo ('<div class="col s12 m6 l3">');
+          echo ('<div class="col s12 m12 l3">');
           get_template_part( 'cardnews', '' );
           echo ('</div>');
 
@@ -258,19 +258,19 @@
       <?php if ( dynamic_sidebar('h5-sidebar') ) : else : endif; ?>
     </div>
 
-    <div class="col S12 m6 l3">
+    <div class="col S12 m12 l3">
       <?php if ( dynamic_sidebar('n3-sidebar') ) : else : endif; ?>
     </div>
 
-    <div class="col S12 m6 l3">
+    <div class="col S12 m12 l3">
       <?php if ( dynamic_sidebar('n4-sidebar') ) : else : endif; ?>
     </div>
 
-      <div class="col S12 m6 l3">
+      <div class="col S12 m12 l3">
       <?php if ( dynamic_sidebar('n5-sidebar') ) : else : endif; ?>
       </div>
 
-      <div class="col S12 m6 l3">
+      <div class="col S12 m12 l3">
     <?php if ( dynamic_sidebar('n6-sidebar') ) : else : endif; ?>
       </div>
 
@@ -279,18 +279,18 @@
       </div>
 
 
-        <div class="col S12 m6 l3">
+        <div class="col S12 m12 l3">
           <?php if ( dynamic_sidebar('n7-sidebar') ) : else : endif; ?>
         </div>
-        <div class="col S12 m6 l3">
+        <div class="col S12 m12 l3">
         <?php if (function_exists ('adinserter')) echo adinserter (1); ?>
         </div>
 
-        <div class="col S12 m6 l3">
+        <div class="col S12 m12 l3">
               <?php if ( dynamic_sidebar('n8-sidebar') ) : else : endif; ?>
              </div>
 
-             <div class="col S12 m6 l3">
+             <div class="col S12 m12 l3">
                <?php
 
                  $myargs = array (
