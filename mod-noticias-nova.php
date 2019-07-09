@@ -80,9 +80,9 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> array(3,6),
+      'cat'							   			=> array(3),
       'posts_per_page'         => 4,
-      'offset'                  => 10,
+      'offset'                  => 14,
       'ignore_sticky_posts'    => true,
 
     );
